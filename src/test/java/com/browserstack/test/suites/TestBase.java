@@ -39,7 +39,7 @@ public class TestBase {
             HashMap<String, String> bstackOptions = new HashMap<>();
             bstackOptions.putIfAbsent("source", "testng-java:sample-sdk:v1.0");
             capabilities.setCapability("bstack:options", bstackOptions);
-            driver = new RemoteWebDriver(new URL("https://hub-euw-only.browserstack.com/wd/hub"), capabilities);
+            driver = new RemoteWebDriver(new URL("https://hub.browserstack.com/wd/hub"), capabilities);
         }
         percy = new Percy(driver);
         if (StringUtils.equalsIgnoreCase(System.getProperty("browserstack-local"),"true")) {
