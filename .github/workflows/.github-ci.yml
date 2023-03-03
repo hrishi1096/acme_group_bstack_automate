@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
@@ -30,8 +30,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '16.0.1'
-          distribution: 'adopt'
-          cache: 'maven'
+          distribution: 'temurin'
 
       - uses: actions/setup-node@v3
         with:
