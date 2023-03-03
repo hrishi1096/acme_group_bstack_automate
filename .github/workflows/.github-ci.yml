@@ -35,7 +35,7 @@ jobs:
       - name: Run test
         run: |
           rm -f -- browserstack.yml
-          ln src/test/resources/conf/capabilities/browserstack-parallel-devices.yml browserstack.yml
-          mvn clean test -P bstack-parallel-devices
+          ln src/test/resources/conf/capabilities/browserstack-parallel-browsers.yml browserstack.yml
+          mvn clean test -P bstack-parallel
 
 
