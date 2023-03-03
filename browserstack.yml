@@ -37,6 +37,18 @@ platforms:
     osVersion: 10
     browserName: Edge
     browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: latest-1
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Chrome
+    browserVersion: latest-1
 
 # =======================
 # Parallels per Platform
