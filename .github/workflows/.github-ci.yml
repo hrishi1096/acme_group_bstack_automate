@@ -41,6 +41,8 @@ jobs:
         run: npm install @percy/cli
 
       - name: Run test
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
         run: |
           rm -f -- browserstack.yml
           ln src/test/resources/conf/capabilities/browserstack-parallel-browsers.yml browserstack.yml
