@@ -34,6 +34,9 @@ public class OrderTest extends TestBase {
 
         softly.assertEquals(ordersPage.getItemsFromOrder(), 3);
         softly.assertAll();
+
+        percy.snapshot("OrderTest");
+
     }
 
     private boolean downloadedFileExists(String fileName) {
