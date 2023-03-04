@@ -5,9 +5,16 @@ End to end CI triggered automation run for web application testing
 This pipeline runs tests on BrowserStack’s Automate, Percy platform along with reports on the Test Observability dashboard. Pretty awesome. :heart_eyes:
 
 # How to run
-To run this test suite, simply clone the repository and fire up the `npx percy exec -- mvn clean test -P bstack-parallel`
-from the top directory as shown below
+To run this test suite:
+* simply clone the repository
+* install the percy client
+* set your environment variables and
+* fire up the `npx percy exec -- mvn clean test -P bstack-parallel` from the top directory as shown below
 ```
+npm install @percy/cli
+export BROWSERSTACK_USERNAME=<username>
+export BROWSERSTACK_ACCESSKEY=<accesskey>
+export PERCY_TOKEN=<percy_token>
 npx percy exec -- mvn clean test -P bstack-parallel
 
 ```
